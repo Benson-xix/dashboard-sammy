@@ -67,20 +67,21 @@
 }
 body {
   font-family: 'Poppins', sans-serif;
+  height: fit-content;
 }
 
 .App{
   background-color: var(--body_background);
   color: var(--body_color);
-  width: 100%;
-  height: 1200px;
+  width: fit-content;
+  height: fit-content;
   margin-top: 1rem;
 
 }
 
 .Bank {
-  width:1512px;
-  height:1000px;
+  width:fit-content;
+  height:fit-content;
   margin-top: 1rem;
   display: flex;
   flex-direction:  row;
@@ -94,14 +95,22 @@ body {
   flex-direction: column;
 }
 
+.mid-sction {
+  width: fit-content;
+}
+
 .section {
-  width: 1287px ;
-  height: 1030px;
+  width: fit-content ;
+  height: fit-content;
   
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 20px;
+}
+
+canvas {
+  color: var(--body_color);
 }
 
 
@@ -237,7 +246,6 @@ margin: .4em;
 align-content: center;
 border-radius: 7.56198px;
 text-decoration: none;
-color:#FFFFFF ;
   }
 
   li img {
@@ -284,7 +292,7 @@ margin-top: 1em;
   font-weight: 400;
   line-height: 21px;
   text-transform: capitalize;
-  color:#FFFFFF ;
+
 }
 
 .eye img{
@@ -306,7 +314,7 @@ margin-top: 1em;
   font-weight: 400;
   line-height: 21px;
   text-transform: capitalize;
-  color:#FFFFFF ;
+ 
 }
 
 .arrow img{
@@ -320,7 +328,7 @@ margin-top: 1em;
 .head {
   display: flex;
   flex-direction: row;
-  
+  width: fit-content !important;
 }
 
 .second {
@@ -376,7 +384,6 @@ font-weight: 500;
 font-size: 14px;
 line-height: 21px;
 text-transform: capitalize;
-color: #141736;
 }
 
 .expense h4 {
@@ -386,7 +393,6 @@ font-weight: 500;
 font-size: 14px;
 line-height: 21px;
 text-transform: capitalize;
-color: #141736;
 }
 
 .weird .boom {
@@ -449,7 +455,6 @@ font-size: 16px;
 line-height: 20px;
 align-items: center;
 text-transform: capitalize;
-color: #000000;
 }
 
 .second .p {
@@ -471,7 +476,7 @@ font-weight: 500;
 font-size: 16px;
 line-height: 20px;
 text-transform: capitalize;
-color: #000000;
+
 margin-top: .5em;
 margin-left: 1.5em;
 }
@@ -484,8 +489,11 @@ font-size: 12px;
 line-height: 20px;
 margin-top: .1em;
 margin-left: 2em;
-color: #000000;
 text-transform: capitalize;
+}
+
+.show-side-br {
+  display: none;
 }
 
 .second .r {
@@ -513,7 +521,6 @@ font-weight: 400;
 font-size: 14px;
 line-height: 20px;
 text-transform: capitalize;
-color: #1C1C1C;
 margin-left: .2em;
 }
 
@@ -570,7 +577,6 @@ font-weight: 600;
 font-size: 14px;
 line-height: 20px;
 text-transform: capitalize;
-color: #1C1C1C;
 }
 
 .deal p {
@@ -612,7 +618,6 @@ margin-top: .6em;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  color: #1C1C1C;
   margin-left: 1em;
 }
 
@@ -648,7 +653,6 @@ font-weight: 500;
 font-size: 20px;
 line-height: 20px;
 text-transform: capitalize;
-color: #000000;
 margin-left: 1em;
 margin-top: 1em;
 }
@@ -675,7 +679,6 @@ font-weight: 400;
 font-size: 14px;
 line-height: 20px;
 text-transform: capitalize;
-color: #1C1C1C;
 margin-top: .2em;
 }
 
@@ -700,7 +703,6 @@ font-weight: 400;
 font-size: 14px;
 line-height: 20px;
 text-transform: capitalize;
-color: #1C1C1C;
 }
 
 .transaction  {
@@ -717,7 +719,6 @@ color: #1C1C1C;
   font-weight: 500;
   font-size: 20px;
   line-height: 30px;
-  color: #000000;
 }
 
 
@@ -775,7 +776,6 @@ height: 29.25px;
 font-family: 'Poppins';
 font-size: 10.2375px;
 line-height: 12px;
-color: #343744;
 margin-top: .7em;
 }
 
@@ -793,7 +793,6 @@ font-weight: 400;
 font-size: 10.2375px;
 line-height: 15px;
 text-transform: capitalize;
-color: #000000;
 margin-top: .6em;
 }
 
@@ -820,7 +819,6 @@ margin-top: .1em;
 height: 0px;
 width: 684px;
 border: 1px solid #ECECEC;
-color: #ECECEC;
 margin-top: 1em;
 margin-left: 1em;
 margin-bottom: 1em;
@@ -862,4 +860,633 @@ font-weight: 500;
 font-size: 10px;
 line-height: 15px;
 color: #B53C22;
+}
+
+.deal p.hid {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+
+  .App {
+    width: fit-content;
+  }
+  .Bank {
+    width: fit-content;
+  }
+
+  .mid-sction {
+    width: fit-content;
+  }
+
+  .Header {
+    gap: 0;
+    width: 685px;
+  }
+
+  .show-side-br {
+    display: none;
+  }
+  
+
+  .section {
+    width: 768px;
+  }
+
+  .svpush {
+    margin-left: 0;
+  }
+
+  .icon {
+    margin: 0;
+  }
+
+  .push {
+    margin-right: 1rem;
+  }
+
+  .moveleft {
+    margin-left: .5rem !important;
+    margin-right: .5rem !important;
+    width: 239px !important;
+  }
+
+  .topmoveleft {
+    width: 213.18px !important;
+    height: 112.18px !important;
+    left: 13.25px !important;
+    top: 50.73px !important;
+    position: absolute !important;
+  }
+
+  .topmoveleft img {
+      position: absolute !important;
+      width: 60.11px !important;
+      height: 60.11px !important;
+      left: 81.39px !important;
+      top: 70.66px !important;
+  }
+
+  .topmoveleft p {
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 9.6352px !important;
+line-height: 14px !important;
+text-align: center !important;
+left: 144.53px !important;
+top:89.87px !important;
+
+  }
+  .ontopmoveleft {
+    width: 239px !important;
+    height: 126.12px !important;
+  }
+  .stan {
+    margin-left: 0.5rem;
+    gap: 4rem;
+  }
+  .stan .eye p {
+    font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8.43081px ;
+  line-height: 13px;
+  text-transform: capitalize;
+  
+
+  }
+  .stan .eye {
+    gap: 0;
+    width: 60px;
+    height: 26.85px;
+    margin-left: .5rem;
+  }
+
+  .stan .eye img {
+    display: none ;
+  }
+
+    .arrow p {
+      font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8.43081px;
+  line-height: 13px;
+  text-transform: capitalize;
+ 
+    }
+
+    .arrow img {
+      width: 3.9px;
+      height: 7.81px;
+      margin-top: .2rem;
+    }
+  .axterik {
+    margin-left: 1rem !important;
+  }
+
+  .zahr {
+    margin-top: 0 !important;
+    margin-left: 0 !important;
+    gap: 20px !important;
+  display: flex;
+  justify-content: center;
+  }
+.life1 {
+  width: 18.07px !important;
+height: 18.07px !important;
+padding: -.4em !important;
+position: relative;
+margin-left: .5em !important;
+  
+}
+
+.life1 img {
+  Width:10.54px !important;
+  Height:10.54px !important;
+  position: absolute;
+  left: 20%;
+  top: 20%;
+}
+
+.zahr p {
+  
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 7.2264px;
+line-height: 11px;
+text-align: center;
+text-transform: capitalize;
+
+}
+
+
+
+.income {
+  width: 209.01px;
+height: 153.31px;
+}
+
+.income .up {
+  gap: 3.5rem;
+}
+
+.income .thefirst {
+  width: 209.01px !important;
+}
+
+.income .thefirst canvas {
+  height: 153.31px !important;
+}
+
+.income .disapper {
+  gap:.5em !important;
+}
+
+.income .why-far {
+  margin: 0 !important;
+}
+
+.expense .why-far {
+  margin-left: 2em !important;
+}
+
+
+.income .disapper p {
+  font-size: 5.39265px !important;
+  line-height: 8px !important;
+}
+
+.expense {
+  width: 207.8px;
+height: 152.43px;
+}
+
+.expense .down {
+  gap: 3.5rem;
+  margin-left: 1em ;
+}
+
+.expense .thesecond  {
+  width: 209.01px !important;
+}
+
+.expense .thesecond canvas {
+  height: 153.31px !important;
+}
+
+.expense .takeout p {
+  font-size: 5.36149px !important;
+line-height: 8px !important;
+}
+
+.expense .takeout .out-out {
+  margin-left: .5em;
+}
+  .second {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .second .row-boss {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .second .row-boss .boss-row {
+    width: 300px !important;
+  }
+
+  .second .row-boss .boss-row .filler-boss {
+    width: 275px !important;
+  }
+  .second .hide-boss {
+    display: none !important;
+  }
+
+  .btn-gang .btn   {
+    margin-left: 6em;
+  }
+
+  .deal-time {
+    width: 283px !important;
+  }
+
+  .deal h4 {
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  .deal p {
+    display: none;
+  }
+
+  .deal p.hid {
+    display: flex;
+    margin-left: 4.5em;
+
+  }
+
+  .deal img {
+    display: none;
+  }
+  .help p {
+    margin-left: 4em;
+  }
+
+  .idan {
+    width: fit-content !important;
+  }
+  .sub-overview {
+    margin-left: 15em;
+  }
+
+  .Nav {
+    width: fit-content;
+    padding-left: -2em;
+  }
+
+  .nav1 {
+    margin-left: 0;
+  }
+
+  .Name {
+    margin-left: 0;
+    padding-left: 1em;
+  }
+
+  .Name h2.fontface {
+    display: none;
+  }
+
+  .main-nav li {
+    background-color: none ;
+  }
+  .main-nav a.mute {
+    display: none;
+  }
+
+  .support-nav  a.mute {
+    display: none;
+  }
+
+  .idan2 {
+    width: 600px !important;
+    height: fit-content !important;
+    padding-right: 2em;
+  }
+
+  .idan2 .seperate {
+    width: 570px;
+  }
+
+  .idan2 .see {
+    margin-left: 10em;
+  }
+
+  .Bitcoin-text {
+    margin-left: 3em;
+  }
+
+}
+
+@media only screen and (max-width: 425px) {
+  .Nav {
+    display: none;
+  }
+  .Header {
+    width: 340px !important;
+    padding: 1em;
+  }
+
+  .svpush {
+    display: none;
+  }
+  .show-side-br {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+  }
+
+  .icon .pic {
+    margin-top: 0;
+  }
+
+  .bigman-ting {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    gap: 2em;
+  }
+  .bigman-ting p {
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 19px;
+text-align: center;
+text-transform: capitalize;
+    margin-left: 2em;
+  }
+
+  .boxo {
+    width: 41px;
+    height: 41px;
+  }
+
+  .icon .push {
+    display: none;
+  }
+
+  .icon .text {
+    display: none;
+  }
+
+  .ss-bar {
+    display: flex;
+    flex-direction: row;
+    gap: 4em;
+  }
+
+  .head {
+    display:  flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1em;
+    width: fit-content !important;
+    margin-right: 0 !important;
+    margin-bottom: 4em;
+  }
+
+  .moveleft {
+    height: fit-content !important;
+    margin-top: 0 !important;
+    margin-bottom: 9rem !important;
+  }
+  
+  .thefirst canvas {
+    width: 300px !important;
+  }
+
+  .thesecond canvas {
+    width: 300px !important;
+  }
+
+  .takeout {
+    gap: 1em !important;
+  }
+  .almighty {
+    gap: 1em !important;
+  }
+
+  .almighty .why-far {
+    margin-left: 5.5rem !important;
+  }
+
+  .up {
+    gap: 9em !important;
+  }
+
+  .down {
+    gap: 9em !important;
+  }
+
+ .takeout .why-far {
+    margin-left: 9rem !important;
+  }
+  .second {
+    width: fit-content !important;
+    gap: 2em;
+    margin-top: 2em;
+  }
+
+  .idan {
+    width: fit-content !important;
+    margin: 0 !important;
+    border: 0 !important;
+  }
+
+  .main-overview  p {
+    font-size: 7.54278px !important;
+  line-height: 11px !important;
+  margin-top: 1em;
+  }
+
+  .sub-overview {
+    margin-left: 10em;
+    font-size: 7.54278px !important;
+    line-height: 11px !important;
+  }
+
+  .idan .main-idan {
+    width: 300px !important;
+    margin: 0 !important;
+    height: 150px !important;
+  }
+
+  .idan .main-idan canvas {
+    width: 350px !important;
+    height: 250px !important;
+  }
+
+  .row-boss {
+    display: flex;
+    flex-direction: column !important;
+  }
+
+
+  .idan2 {
+    width: fit-content !important;
+    margin: 0 !important;
+    border: 0 !important;
+  }
+  .transaction {
+    margin: 0 !important;
+  }
+  .transaction h3 {
+    font-size: 12.7179px !important;
+line-height: 19px !important;
+margin-left: .5em;
+margin-top: 1em;
+  }
+  .see {
+    margin-left: 2.5em  !important;
+    margin-top: 1em;
+  }
+
+  .see p {
+    font-size: 9.50446px !important;
+    line-height: 14px !important;
+  }
+
+  .Bitcoin {
+    gap: 0;
+  }
+
+  .Bitcoin p {
+    font-size: 7.48476px !important;
+line-height: 9px !important;
+  }
+
+  .Bitcoin-text {
+    margin-left: 1em;
+    gap: .5em;
+  }
+
+
+  .complete {
+    margin-left: 0;
+    width: 57.76px !important;
+    height: 19.81px !important;
+  }
+
+  .reject {
+    margin-left: 0;
+    width: 57.76px !important;
+    height: 19.81px !important;
+  }
+
+  .pending {
+    margin-left: 0;
+    width: 57.76px;
+    height: 19.81px;
+  }
+
+  .seperate {
+    width: 300px !important;
+  }
+
+  .mid-sction {
+    height: fit-content !important;
+  }
+
+  .Bank {
+    height: fit-content;
+  }
+  
+  .hidden-leaf {
+    display: flex;
+    margin-top: 4rem !important ;
+    width: fit-content;
+    height: fit-content;
+    background-color: #ffffff;
+    border: 1px solid #282c34;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .row-boat {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+  }
+
+
+  .hidden-leaf  .Name {
+    display: block;
+    margin-top: 0;
+    padding: 0;
+  }
+  .hidden-leaf  .Name img {
+    margin-left: 5em;
+    width: 26.02px;
+    height: 24.66px;
+  }
+  .hidden-leaf  .Name h2 {
+    display: block;
+    color: #0177FB;
+    font-size: 16.1754px;
+    line-height: 24px;
+    margin-left: 3em;
+  }
+  .hidden-leaf .nav1 {
+    margin-top: 0;
+    width: fit-content;
+  }
+  .hidden-leaf .nav1 .main-nav {
+    width: fit-content;
+  }
+  .hidden-leaf .nav1 .main-nav  .li-beloved  {
+    width: fit-content;
+  }
+  .hidden-leaf .nav1 .main-nav  .li-beloved li {
+    gap: 0;
+    padding: 0;
+    margin-right:0 ;
+    width: fit-content !important;
+  }
+  .hidden-leaf .nav1 .main-nav  .li-beloved li img {
+    filter: brightness(70%);
+  }
+
+  .hidden-leaf .nav1 .main-nav  .li-beloved li a {
+    display: block;
+    margin-left: .5em;
+  }
+
+  .hidden-leaf .support-nav  {
+    width: fit-content;
+  }
+   
+  .hidden-leaf .support-nav ul {
+    width: fit-content;
+  }
+
+  .hidden-leaf .support-nav ul li  {
+    gap: 0;
+    padding: 0;
+    margin-right:0 ;
+    width: fit-content !important;
+  }
+
+  .hidden-leaf .support-nav ul li img {
+    filter: brightness(70%);  
+  }
+
+  .hidden-leaf .support-nav ul li a {
+    display: block;
+    margin-left: .5em;
+  }
 }

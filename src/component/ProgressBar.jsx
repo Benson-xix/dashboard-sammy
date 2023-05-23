@@ -25,8 +25,8 @@ const ProgressBar = (props) => {
 
 
   return (
-    <div  style={containerStyles}   >
-    <div style={fillerStyles}>
+    <div className='filler-boss' style={containerStyles}   >
+    <div  style={fillerStyles}>
     </div>
     <p className='r'>50%</p> 
     

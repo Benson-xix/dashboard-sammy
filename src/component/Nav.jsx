@@ -13,34 +13,36 @@ const Nav = () => {
   return (
     <nav className='nav1'>
      <div className='main-nav'>
-     <ul>
-        <li style={{backgroundColor:"white", borderRadius:"7.56198px", width:"236.94px", height:"60.5px", paddingLeft:"1em", marginRight:"2em" }}> 
+     <ul className='li-beloved'>
+        <li  className={window.innerWidth <= 768 ? 'mute' : ''} style={{backgroundColor: window.innerWidth <= 768 ? '' : 'white', borderRadius: window.innerWidth <= 768 ? '' : '7.56198px', width: window.innerWidth <= 768 ? '' : '236.94px', height: window.innerWidth <= 425 ? '' : '60.5px', paddingLeft: window.innerWidth <= 768 ? '' : '1em', marginRight: window.innerWidth <= 768 ? '' : '2em'}} >
+       
             <img src={Vector2} alt="Vector2" />
-            <a  style={{color:" #5A57FE"}}href="/">Dashboard</a>
+            { <a className='mute' style={{color: "#5A57FE"}}href="/">Dashboard</a> 
+            /* window.innerWidth <= 768 ? 'mute' : '' */}
            
         </li>
         <li>
             <img src={Vector3} alt="Vector(1)" />
-            <a href="">My account</a>
+            <a className='mute' href="">My account</a>
         </li>
         <li>
             <img src={Vector4} alt="Vector(2)" />
-            <a href="">My card</a>
+            <a className='mute' href="">My card</a>
             
         </li>
         <li>
              <img src={Vector5} alt="Vector(3)" />
-            <a href="">Fund transfer</a>
+            <a className='mute' href="">Fund transfer</a>
            
         </li>
         <li>
             <img src={Vector6} alt="Vector(4)" />
-            <a href="">Bill payment</a>
+            <a className='mute' href="">Bill payment</a>
             
         </li>
         <li>
             <img src={Vector7} alt="Vector(5)" />
-            <a href="">Support</a>
+            <a className='mute' href="">Support</a>
             
         </li>
      </ul>
@@ -50,12 +52,12 @@ const Nav = () => {
         <ul>
             <li>
                 <img src={Vector8} alt="Vector(6)" />
-                <a href="">Settings</a>
+                <a className='mute' href="">Settings</a>
                 
             </li>
             <li>
                 <img src={Vector9} alt="Vector(7)" />
-                <a href="">Log out</a>
+                <a className='mute' href="">Log out</a>
                 
             </li>
         </ul>

@@ -29,15 +29,26 @@ const ChartLine = () => {
 
     const options = {
         plugins: {
-            legend:false
+            tooltip: {
+                enabled: true,
+                displayColors: false,
+              },
+            legend:{
+                display: false,
+            },
         },
         scales: {
             x: {
-                grid: {
-                    display:false,
-                   
-                    // drawOnChartArea: false,
-                }
+              grid: {
+                display: false,
+              },
+              ticks: {
+                color: '#070707',
+                font: {
+                  size: 12,
+                  weight: 'bold',
+                },
+              },
             },
 
             y: {
@@ -45,12 +56,18 @@ const ChartLine = () => {
                 max: 4,
                 ticks:{
                     stepSize:1,
-                    callback: (value) => value + 'k'
+                    callback: (value) => value + 'k',
+                    color: '#070707',
+                    font: {
+                        size: 12,
+                        weight: 'bold'
+                    },
                 },
                 grid: {
                     borderDash: [10],
                      display:false,
-                    
+                     color: '#f8f7f7',
+                     borderColor: '#f8f7f7',
                 }
             }
         }
@@ -59,7 +76,7 @@ const ChartLine = () => {
 
 
   return (
-    <div style={{width:"400px", height:"300px", marginLeft:".9em", marginTop:".8em" }}>
+    <div className='thefirst' style={{width:"400px", height:"300px", marginLeft:".9em", marginTop:".8em" }}>
         <Line data={data} options={options}>
         </Line>
     </div>

@@ -17,7 +17,7 @@ const Search = styled.div`
   display: flex;  
   align-items: center;
   width: 398px; 
-  margin-left: 2rem;
+  margin-left: ${window.innerWidth <= 768 ? '1px' : '2rem'};
   margin-top:1rem;
 `
 

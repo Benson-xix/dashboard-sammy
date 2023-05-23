@@ -1,19 +1,21 @@
 import React from 'react'
 import SearchBarView from './SearchBarView'
 import UserNotification from './UserNotification'
-import Group from '../assets/image/icon/Group 1000004527.png'
 import Nav from './Nav'
 import Main from './Main'
+import ShowSideBar from './ShowSideBar'
+import MainHeaderLogo from './MainHeaderLogo'
 
 
 const BankingDashboard = () => {
   return (
     <div className='Bank' >
         <div className='Nav'>
-                <div className='Name'>
-                    <img src={Group} alt="Group" className='pic2'/>
-                    <h2 className='fontface'>Primbank</h2>
-                </div>
+
+            <div>
+                <MainHeaderLogo/>
+            </div>
+                
 
                 <div>
                     <Nav/>
@@ -23,11 +25,16 @@ const BankingDashboard = () => {
     <div className='mid-sction'>
         
         <div className='Header'>
-            <div>
+            <div className='svpush'>
                 <SearchBarView/>
             </div>
 
-            <div>
+           
+
+            <div className='ss-bar'>
+            <div className="show-side-br">
+            <ShowSideBar/>
+            </div>
                 <UserNotification/>
             </div>
         </div>

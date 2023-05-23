@@ -75,7 +75,7 @@ const data = {
 const ExpenseInvest = () => {
    
   return (
-    <div style={{width:"600px", height:"400px", marginLeft:".9em", marginTop:".8em" }}>
+    <div className='main-idan' style={{width:"600px", height:"400px", marginLeft:".9em", marginTop:".8em" }}>
     <Line data={data} options={options}>
     </Line>
     

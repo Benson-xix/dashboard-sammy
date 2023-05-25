@@ -20,8 +20,8 @@ const MainHeaderLogo = () => {
 
   return (
     <div className='Name'>
-      {windowWidth > 1024 && <img src={Group} alt="Group" className='pic2'/> }
-      {windowWidth > 425 && <img src={billion} alt='#' className='pic2' />}            
+       <img src={Group} alt="Group" className='pic2'/> 
+      {windowWidth > 425 && <img src={billion} alt='#' className='pic3' />}            
       <h2 className='fontface'>Primbank</h2>
     </div>
   )

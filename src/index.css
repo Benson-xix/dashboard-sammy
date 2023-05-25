@@ -866,6 +866,10 @@ color: #B53C22;
   display: none;
 }
 
+.Name img.pic3 {
+  display: none ;
+}
+
 @media only screen and (max-width: 768px) {
 
   .App {
@@ -1429,10 +1433,11 @@ line-height: 9px !important;
     margin-top: 0;
     padding: 0;
   }
-  .hidden-leaf  .Name img {
+  .hidden-leaf  .Name img.pic3 {
     margin-left: 5em;
     width: 26.02px;
     height: 24.66px;
+    display: block;
   }
   .hidden-leaf  .Name h2 {
     display: block;
